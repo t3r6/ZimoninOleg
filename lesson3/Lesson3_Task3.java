@@ -1,14 +1,14 @@
-package Lesson3;
+package lesson3;
 
 import java.util.Scanner;
 
-public class L3T3 {
+public class Lesson3_Task3 {
     public static void main(String[] args) {
         System.out.println("Введите целое число: ");
         int num = scanner();
         if (num % 2 == 0) {
             System.out.println("Вы ввели четное число!");
-        } else if (num % 2 != 0) {
+        } else {
             System.out.println("Вы ввели нечетное число!");
         }
     }

@@ -1,6 +1,6 @@
 package lesson2;
 
-public class L2T6 {
+public class Lesson2_Task6 {
     public static void main(String[] args) {
          /*
         *
