@@ -22,7 +22,7 @@ public class Lesson5_Task17 {
                 ticker(garland);
                 break;
             case 3:
-                firstLightbulb(garland);
+                firstLightBulb(garland);
                 break;
             case 4:
                 garlandaState(garland);
@@ -39,8 +39,7 @@ public class Lesson5_Task17 {
             System.out.println("Введите целое число!");
             scan.nextLine();
         }
-        int i = scan.nextInt();
-        return i;
+        return scan.nextInt();
     }
 
     public static int[] createGarlandArray() {
@@ -75,14 +74,14 @@ public class Lesson5_Task17 {
     static void ticker(int[] garlandArr) {
         System.out.println("Введите количество смещений");
         int biasNumber = scanGarland();
-        for (int k = 0; k < biasNumber; k++) {
+        for (int i = 0; i < biasNumber; i++) {
             int[] flashingGarland = new int[32];
-            System.arraycopy(garlandArr, 0, flashingGarland, k, (32 - k));
+            System.arraycopy(garlandArr, 0, flashingGarland, i, (32 - i));
             System.out.println(Arrays.toString(flashingGarland));
         }
     }
 
-    static void firstLightbulb(int[] garlandArr) {
+    static void firstLightBulb(int[] garlandArr) {
         if (garlandArr[0] == 0) {
             System.out.println("Первая лампочка горит!");
         } else {

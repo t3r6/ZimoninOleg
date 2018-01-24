@@ -1,4 +1,4 @@
-package lesson7;
+package lesson8;
 
 public class Matrix {
     private double[][] twoDimensionalArray;

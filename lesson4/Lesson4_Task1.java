@@ -8,22 +8,21 @@ public class Lesson4_Task1 {
         numbers(getNumber);
     }
 
-    static int scanner(Scanner getNumber) {
+    static int getNumber(Scanner getNumber) {
         while (!getNumber.hasNextInt()) {
             System.out.println("Введите целое число!");
             getNumber.nextLine();
         }
-        int i = getNumber.nextInt();
-        return i;
+        return getNumber.nextInt();
     }
 
     public static void numbers(Scanner getNumber) {
         System.out.println("Введите 3 целых числа: ");
-        int firstNumber = scanner(getNumber);
+        int firstNumber = getNumber(getNumber);
         System.out.println("Введите следующие число: ");
-        int secondNumber = scanner(getNumber);
+        int secondNumber = getNumber(getNumber);
         System.out.println("Введите последнее число: ");
-        int thirdNumber = scanner(getNumber);
+        int thirdNumber = getNumber(getNumber);
         if (firstNumber > secondNumber && firstNumber > thirdNumber) {
             System.out.println("Меньшее число: ");
             System.out.println(secondNumber > thirdNumber ? thirdNumber : secondNumber);

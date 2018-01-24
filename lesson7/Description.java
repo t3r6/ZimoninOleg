@@ -1,4 +1,4 @@
-package Lesson7;
+package lesson7;
 
 /**
  * Created by IT_School on 12/27/2017.

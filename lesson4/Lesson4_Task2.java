@@ -22,7 +22,7 @@ public class Lesson4_Task2 {
                 ticker();
                 break;
             case 3:
-                firstLightbulb();
+                firstLightBulb();
                 break;
             case 4:
                 girlandaState();
@@ -39,8 +39,7 @@ public class Lesson4_Task2 {
             System.out.println("Введите целое число!");
             scan.nextLine();
         }
-        int i = scan.nextInt();
-        return i;
+        return scan.nextInt();
     }
 
     static void flashing() {
@@ -71,10 +70,10 @@ public class Lesson4_Task2 {
         }
     }
 
-    static void firstLightbulb() {
+    static void firstLightBulb() {
         String trans = Integer.toBinaryString(garland);
-        int DlinaStroki = trans.length();
-        for (int j = 32; DlinaStroki < j; DlinaStroki++) {
+        int dlinaStroki = trans.length();
+        for (int i = 32; dlinaStroki < i; dlinaStroki++) {
             trans = "0" + trans;
         }
         if (trans.charAt(31) == ('1')) {
@@ -88,7 +87,7 @@ public class Lesson4_Task2 {
         System.out.println("Вот так выглядит ваша гирлянда сейчас");
         String trans = Integer.toBinaryString(garland);
         int dlinaStroki = trans.length();
-        for (int j = 32; dlinaStroki < j; dlinaStroki++) {
+        for (int i = 32; dlinaStroki < i; dlinaStroki++) {
             System.out.print("0");
         }
         System.out.println(trans);
