@@ -1,4 +1,4 @@
-package lesson10;
+package lesson10.sessons;
 
 public enum Sesson {
     WINTER(-25.6), SUMMER(45.5) {

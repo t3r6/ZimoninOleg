@@ -47,12 +47,7 @@ public class Lesson4_Task2 {
         int i = scanGarland();
         for (int k = 0; k < i; k++) {
             garland = ~garland;
-            String trans = Integer.toBinaryString(garland);
-            int dlinaStroki = trans.length();
-            for (int j = 32; dlinaStroki < j; dlinaStroki++) {
-                System.out.print("0");
-            }
-            System.out.println(trans);
+            printGarland();
         }
     }
 
@@ -61,22 +56,12 @@ public class Lesson4_Task2 {
         int i = scanGarland();
         for (int k = 0; k < i; k++) {
             garland = garland >> 1;
-            String trans = Integer.toBinaryString(garland);
-            int dlinaStroki = trans.length();
-            for (int j = 32; dlinaStroki < j; dlinaStroki++) {
-                System.out.print("0");
-            }
-            System.out.println(trans);
+            printGarland();
         }
     }
 
     static void firstLightBulb() {
-        String trans = Integer.toBinaryString(garland);
-        int dlinaStroki = trans.length();
-        for (int i = 32; dlinaStroki < i; dlinaStroki++) {
-            trans = "0" + trans;
-        }
-        if (trans.charAt(31) == ('1')) {
+        if ((garland & 1) == 1) {
             System.out.println("Первая лампочка горит!");
         } else {
             System.out.println("Первая лампочка не горит!");
@@ -85,11 +70,19 @@ public class Lesson4_Task2 {
 
     static void girlandaState() {
         System.out.println("Вот так выглядит ваша гирлянда сейчас");
+        printGarland();
+    }
+
+    public static void printGarland() {
         String trans = Integer.toBinaryString(garland);
+        transfiguration(trans);
+        System.out.println(trans);
+    }
+
+    private static void transfiguration(String trans) {
         int dlinaStroki = trans.length();
         for (int i = 32; dlinaStroki < i; dlinaStroki++) {
             System.out.print("0");
         }
-        System.out.println(trans);
     }
 }

@@ -1,12 +1,13 @@
-package lesson10;
+package lesson10.instruments;
 
-public class Trumpet implements musicInstrument{
+public class Trumpet implements MusicInstrument {
     private double trumpletLength;
 
     public Trumpet(double trumpletLength) {
         this.trumpletLength = trumpletLength;
     }
-    public Trumpet(){
+
+    public Trumpet() {
 
     }
 

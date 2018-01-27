@@ -1,12 +1,13 @@
-package lesson10;
+package lesson10.instruments;
 
-public class Drum  implements musicInstrument{
+public class Drum implements MusicInstrument {
     private double diameter;
 
     public Drum(double diam) {
         this.diameter = diam;
     }
-    public Drum(){
+
+    public Drum() {
 
     }
 

@@ -1,6 +1,6 @@
-package lesson10;
+package lesson10.instruments;
 
-public class musicalInstrumentsDemo {
+public class MusicalInstrumentsDemo {
     public static void main(String[] args) {
         Guitar acousticGuitar = new Guitar(6);
         Guitar electricGuitar = new Guitar();
@@ -8,8 +8,8 @@ public class musicalInstrumentsDemo {
         Drum smallDrum =new Drum();
         Trumpet longTrumplet = new Trumpet(17.5);
         Trumpet shortTrumplet = new Trumpet();
-        musicInstrument[] instruments = {acousticGuitar, bigDrum, longTrumplet, electricGuitar, smallDrum, shortTrumplet};
-        for (musicInstrument instrument : instruments) {
+        MusicInstrument[] instruments = {acousticGuitar, bigDrum, longTrumplet, electricGuitar, smallDrum, shortTrumplet};
+        for (MusicInstrument instrument : instruments) {
             instrument.play();
         }
     }

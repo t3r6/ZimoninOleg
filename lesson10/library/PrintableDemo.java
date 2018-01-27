@@ -1,4 +1,4 @@
-package lesson10;
+package lesson10.library;
 
 public class PrintableDemo {
     public static void main(String[] args) {

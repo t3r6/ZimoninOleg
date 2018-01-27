@@ -4,6 +4,13 @@ public class Student {
     private String firstName, lastName, group;
     private double averageMark;
 
+    public Student(String firstName, String lastName, String group, double averageMark) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.group = group;
+        this.averageMark = averageMark;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -34,13 +41,6 @@ public class Student {
 
     public void setGroup(String group) {
         this.group = group;
-    }
-
-    public Student(String firstName, String lastName, String group, double averageMark) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.group = group;
-        this.averageMark = averageMark;
     }
 
     public int getScholarship() {

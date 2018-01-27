@@ -1,6 +1,6 @@
-package lesson10;
+package lesson10.instruments;
 
-public class Guitar implements musicInstrument {
+public class Guitar implements MusicInstrument {
     private int amountOfStrings;
 
     public Guitar(int amountOfStrings) {
