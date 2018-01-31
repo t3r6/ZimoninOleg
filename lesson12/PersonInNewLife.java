@@ -1,15 +1,15 @@
-package lesson7;
+package lesson12;
 
-public class Person {
+public class PersonInNewLife {
     private String fullName;
     private int age;
 
-    public Person(String fullName, int age) {
+    public PersonInNewLife(String fullName, int age) {
         this.fullName = fullName;
         this.age = age;
     }
 
-    public Person() {
+    public PersonInNewLife() {
 
     }
 
@@ -29,12 +29,16 @@ public class Person {
         this.age = age;
     }
 
-    public void move() {
+    @Override
+    public String toString() {
+        return String.format("PersonInNewLife fullName %s age %d", fullName, age);
+    }
+
+    public void move(String fullName) {
         System.out.println(getFullName() + "is moveing!");
     }
 
-    public void talk() {
+    public void talk(String fullName) {
         System.out.println(getFullName() + "is talking!");
     }
 }
-

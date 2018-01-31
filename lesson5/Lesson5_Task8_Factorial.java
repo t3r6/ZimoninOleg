@@ -1,6 +1,6 @@
 package lesson5;
 
-public class Lesson5_Task8 {
+public class Lesson5_Task8_Factorial {
     public static void main(String[] args) {
         long randomNum = (long) (Math.random() * 5);
         System.out.println(calculationFactorial(randomNum));

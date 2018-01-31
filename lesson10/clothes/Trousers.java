@@ -5,9 +5,6 @@ public class Trousers extends Clothe implements MenClothes, WomenClothes {
         super(size, price, color);
     }
 
-    public Trousers() {
-    }
-
     @Override
     public void setSize(SizeClothes size) {
         super.setSize(size);

@@ -1,7 +1,7 @@
 package lesson10.clothes;
 
 public abstract class Clothe {
-    SizeClothes size;
+    private SizeClothes size;
     private double price;
     private String color;
 
@@ -60,5 +60,14 @@ public abstract class Clothe {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + (color != null ? color.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Clothe{" +
+                "size=" + size +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                '}';
     }
 }

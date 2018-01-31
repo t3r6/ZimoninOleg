@@ -5,9 +5,6 @@ public class Skirt extends Clothe implements WomenClothes {
         super(size, price, color);
     }
 
-//    public Skirt() {
-//    }
-
     @Override
     public SizeClothes getSize() {
         return super.getSize();
