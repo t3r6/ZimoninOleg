@@ -5,7 +5,6 @@ public class Tie extends Clothe implements MenClothes {
         super(size, price, color);
     }
 
-
     @Override
     public SizeClothes getSize() {
         return super.getSize();

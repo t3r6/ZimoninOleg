@@ -7,29 +7,6 @@ public class Phone {
     private String name;
     private static int count = 0;
 
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-
-    }
-
-    void receiveCall(String name) {
-        System.out.println("Звонит " + name);
-    }
-
-    void receiveCall(String name, String number) {
-        System.out.println("Звонит " + name + " С номера " + number);
-    }
-
-    public Phone(String n, String m, double w) {
-        this(n, m);
-        this.weight = w;
-    }
-
     public Phone(String n, String m) {
         this.number = n;
         this.model = m;
@@ -42,6 +19,11 @@ public class Phone {
         this.weight = weight;
         this.name = name;
         count++;
+    }
+
+    public Phone(String n, String m, double w) {
+        this(n, m);
+        this.weight = w;
     }
 
     public Phone() {
@@ -64,6 +46,14 @@ public class Phone {
         this.weight = weight;
     }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
     public String getNumber() {
         return number;
     }
@@ -74,6 +64,22 @@ public class Phone {
 
     public static int getCountInstance() {
         return count;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        Phone.count = count;
+    }
+
+    void receiveCall(String name) {
+        System.out.println("Звонит " + name);
+    }
+
+    void receiveCall(String name, String number) {
+        System.out.println("Звонит " + name + " С номера " + number);
     }
 
     public void sendMessage(String... numbers) {

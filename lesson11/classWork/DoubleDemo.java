@@ -3,9 +3,9 @@ package lesson11.classWork;
 public class DoubleDemo {
     public static void main(String[] args) {
         double k = 2;
-        Double d5 = new Double(k);
-        Double mD = new Double(89);
-        Double sd = new Double("53");
+        Double d5 = k;
+        Double mD = 89.3;
+        String sd = Double.toString(33.44);
         Double d3 = Double.valueOf(563.3);
         Double d4 = Double.valueOf("96.6");
         double d6 = Double.parseDouble("96.6");
