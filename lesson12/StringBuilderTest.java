@@ -10,9 +10,9 @@ public class StringBuilderTest {
         System.out.println(sb);
         sb.deleteCharAt(7);
         sb.deleteCharAt(18);
-        sb.insert(7, "ровно");
-        sb.insert(23, "ровно");
-        sb.replace(40, 41, "ровно");
+        sb.insert(7, "равно");
+        sb.insert(23, "равно");
+        sb.replace(40, 41, "равно");
         System.out.println(sb);
     }
 }

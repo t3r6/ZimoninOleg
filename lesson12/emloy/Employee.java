@@ -1,9 +1,8 @@
-package lesson12;
+package lesson12.emloy;
 
 public class Employee {
     private String fullname;
     private double salary;
-    private static Employee[] employees;
 
     public Employee(String fullname, double salary) {
         this.fullname = fullname;
@@ -24,14 +23,6 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
-    }
-
-    public static Employee[] getEmployees() {
-        return employees;
-    }
-
-    public static void setEmployees(Employee[] employees) {
-        Employee.employees = employees;
     }
 
     @Override

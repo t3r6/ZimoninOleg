@@ -1,6 +1,8 @@
 package lesson10.clothes;
 
-public class Tie extends Clothe implements MenClothes {
+import java.io.Serializable;
+
+public class Tie extends Clothe implements MenClothes, Serializable {
     public Tie(SizeClothes size, double price, String color) {
         super(size, price, color);
     }
