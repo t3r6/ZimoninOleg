@@ -97,19 +97,19 @@ public class Cars {
                 '}';
     }
 
-    public static void start() {
+    public void start() {
         System.out.println("Поехали!");
     }
 
-    public static void stop() {
+    public void stop() {
         System.out.println("Останавливаемся!");
     }
 
-    public static void turnRight() {
+    public void turnRight() {
         System.out.println("Поворачиваем на право!");
     }
 
-    public static void turnLeft() {
+    public void turnLeft() {
         System.out.println("Поворачиваем на лево!");
     }
 

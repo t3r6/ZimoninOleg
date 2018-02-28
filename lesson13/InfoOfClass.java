@@ -1,7 +1,5 @@
 package lesson13;
 
-import java.util.Arrays;
-
 public class InfoOfClass {
     public static void main(String[] args) {
         trueInfoOfClass("".getClass());

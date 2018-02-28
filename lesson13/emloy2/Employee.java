@@ -1,20 +1,20 @@
 package lesson13.emloy2;
 
 import java.text.NumberFormat;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.Formatter;
+import java.util.GregorianCalendar;
 import java.util.Locale;
 
 public class Employee {
     private String fullname;
     private double salary;
-    private Date salaryDate;
+    private Calendar salaryDate = new GregorianCalendar();
 
-    public Employee(String fullname, double salary, Date salaryDate) {
+    public Employee(String fullname, double salary, Calendar salaryDate) {
         this.fullname = fullname;
         this.salary = salary;
         this.salaryDate = salaryDate;
-
     }
 
     public Employee(String fullname, double salary) {
@@ -38,11 +38,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Date getSalaryDate() {
+    public Calendar getSalaryDate() {
         return salaryDate;
     }
 
-    public void setSalaryDate(Date salaryDate) {
+    public void setSalaryDate(Calendar salaryDate) {
         this.salaryDate = salaryDate;
     }
 

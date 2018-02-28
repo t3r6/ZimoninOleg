@@ -12,7 +12,7 @@ public class Holiday {
 
         SimpleDateFormat[] sdf = new SimpleDateFormat[3];
 
-        sdf[0] = new SimpleDateFormat("dd   MM   yy        hh:mm");
+        sdf[0] = new SimpleDateFormat("dd MM yy hh:mm");
         sdf[1] = new SimpleDateFormat("dd:MM:YYYY");
         sdf[2] = new SimpleDateFormat("hh:mm");
 
