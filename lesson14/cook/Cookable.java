@@ -1,5 +1,6 @@
 package lesson14.cook;
 
 public interface Cookable {
-    void cook();
+    void cook(String s);
+   /* void cook();*/
 }
