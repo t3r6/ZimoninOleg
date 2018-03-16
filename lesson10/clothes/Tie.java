@@ -44,6 +44,6 @@ public class Tie extends Clothe implements MenClothes, Serializable {
 
     @Override
     public void dressMen() {
-
+        System.out.println("Мужчина надел галстук ");
     }
 }
